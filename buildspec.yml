@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Validating website files..."
+      - test -f index.html
+      - test -f style.css
+      - echo "Website validation successful!"
+
+artifacts:
+  files:
+    - index.html
+    - style.css
